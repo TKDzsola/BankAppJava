@@ -43,12 +43,12 @@ public class SzamlaIT {
     @Test
     public void testGetOsszeg() {
         System.out.println("getOsszeg");
-        Szamla instance = null;
-        long expResult = 0L;
+        Szamla instance = new Szamla("11111111-11111111-11111111", 5);
+        long expResult = 5;
         long result = instance.getOsszeg();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -57,12 +57,12 @@ public class SzamlaIT {
     @Test
     public void testGetSzamlaszam() {
         System.out.println("getSzamlaszam");
-        Szamla instance = null;
-        String expResult = "";
+        Szamla instance = new Szamla("11111111-11111111-11111111", 5);
+        String expResult = "11111111-11111111-11111111";
         String result = instance.getSzamlaszam();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -71,11 +71,11 @@ public class SzamlaIT {
     @Test
     public void testSetOsszeg() {
         System.out.println("setOsszeg");
-        long osszeg = 0L;
-        Szamla instance = null;
+        long osszeg = 5;
+        Szamla instance = new Szamla("11111111-11111111-11111111", 5);
         instance.setOsszeg(osszeg);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
     
 }
